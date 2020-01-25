@@ -36,6 +36,21 @@
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/ico/faviconnew.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/ico/faviconnew.png">
   <link rel="apple-touch-icon-precomposed" href="aassets/images/ico/faviconnew.png">
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      /* box-shadow: 5px 5px 10px 5px grey; */
+
+    }
+
+    .grid-item {
+      margin: 20px;
+      text-align: center;
+      box-shadow: 5px 5px 10px 5px grey;
+
+    }
+  </style>
 
 </head>
 
@@ -170,49 +185,32 @@
     <div class="container">
       <h2 class="section-title wow fadeInUp">Latest Post</h2>
 
-      <div class="row">
-        <div class="col-sm-4">
-          <article class="blog-post-wrapper">
-            <div class="figure">
-              <div class="post-thumbnail">
-                <a
-                  href="https://medium.com/@aarthikrao/building-a-distributed-fault-tolerant-scheduler-with-go-and-redis-e1b0bcde1db5"><img
-                    src="assets/images/counter-bg.jpg" class="img-responsive " alt=""></a>
-              </div>
-              <i class="fa fa-file-photo-o"></i>
-            </div><!-- /.figure -->
-            <header class="entry-header">
-              <div class="post-meta">
-                <span class="the-category">
-                  <a>Go</a> <a>Redis</a> <a>RabbitMQ</a>
-                </span>
-              </div>
-              <h2 class="entry-title"><a
-                  href="https://medium.com/@aarthikrao/building-a-distributed-fault-tolerant-scheduler-with-go-and-redis-e1b0bcde1db5"
-                  rel="">Building a Distributed, Fault-tolerant scheduler with Go and Redis.</a></h2>
-              <hr>
-              <div class="entry-meta">
-                <ul class="list-inline">
-                  <li>
-                    <span class="the-author">
-                      <a href="#">Aarthik Rao</a>
-                    </span>
-                  </li>
-                  <li>
-                    <span class="the-time">
-                      <a href="#">11 May 2019</a>
-                    </span>
-                  </li>
-                </ul>
-              </div><!-- .entry-meta -->
-            </header><!-- .entry-header -->
-          </article>
+      <div class="grid-container">
+        <div class="grid-item">
+          <blockquote class="embedly-card">
+            <h4><a
+                href="https://medium.com/@aarthikrao/building-a-distributed-fault-tolerant-scheduler-with-go-and-redis-e1b0bcde1db5">Building
+                a Distributed, Fault-tolerant scheduler with Go and Redis.</a></h4>
+            <p>The aim is to build a distributed scheduler that can handle thousands of jobs in a small time frame. It
+              uses
+              Go-routines for concurrency. They are lightweight. You can spin up thousands of Go-routines for processing
+              the
+              jobs. Due to their very small initial stack, memory consumption is less.</p>
+          </blockquote>
+          <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
         </div>
-      </div><!-- /.row -->
-      <div class="blog-more text-center">
-        <a href="#" class="btn btn-primary">View More</a>
+        <div class="grid-item">
+          <blockquote class="embedly-card">
+            <h4><a
+                href="https://medium.com/@aarthikrao/building-a-real-time-online-multiplayer-game-with-unity-and-go-lang-14a2af33d076">Building
+                a real-time online multiplayer game with Unity and Go lang.</a></h4>
+            <p>I have built server-side apps using Go. I wanted to learn how to build cool games using Unity. This is my
+              first attempt at building a game in Unity and building a game server. Ever. In this blog, we will go
+              through the steps to build a real-time online multiplayer game.</p>
+          </blockquote>
+          <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+        </div>
       </div>
-
     </div><!-- /.container -->
   </section><!-- End Blog Section -->
 
@@ -418,7 +416,8 @@
 
                     <div class="timeline-body">
                       <p>A member of a team that built an event-driven system used for driving
-                        marketing and player retention campaigns.</p><p>This system was also used to
+                        marketing and player retention campaigns.</p>
+                      <p>This system was also used to
                         send out SMS, Emails and other online communication zones. Campaigns
                         with A/B could be configured with complex rules.</p>
                     </div><!-- /timeline-body -->
